@@ -1,0 +1,86 @@
+.category-card {
+    margin: 2vh 5vw 1vh 5vw;
+    min-height: 30vh;
+
+
+    &__inner {
+
+        font-size: 1.5rem;
+
+        padding: 0;
+        margin: 0;
+
+
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+
+        //height: 50px;
+        overflow: auto;
+
+
+        &_icon {
+
+            padding-left: 0.5rem;
+            font-size: 2rem;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bolder;
+        }
+
+        &_cell {
+            transition: .5s all;
+            padding-left: 1vw;
+
+            width:50%;
+            &:hover {
+                padding-left: 2vw;
+                cursor: pointer;
+                color: #283593;
+
+            }
+
+            &--selected {
+                color: #283593;
+                border-left: 8px solid #283593;
+            }
+        }
+
+    }
+
+    &__info {
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0;
+
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+        position: relative;
+
+        &_image {
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+
+    &__about {
+
+        padding-top: .8rem;
+        padding-bottom: .8rem;
+    }
+
+
+}
+
+#card:hover {
+    transform: translateY(-4%);
+    border-bottom: 4px solid #ff5252;
+    transition: 0.5s;
+}
+
+
+.engine-info-divider {
+    margin-bottom: 2rem;
+}
+a, u {
+    text-decoration: inherit;
+    color: inherit;
+}
